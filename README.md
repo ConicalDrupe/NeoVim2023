@@ -8,3 +8,9 @@ place nvim folder into ~/.config
    https://askubuntu.com/questions/3697/how-do-i-install-fonts?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 3) In nvim, use :Mason to install lsp servers
   pyright has a node.js dependency: sudo apt install npm
+
+Note: If running into issues (usually a dependency issue with fzf and telescope):
+Try
+:PackerSync
+:PackerCompile
+:checkhealth telescope 
