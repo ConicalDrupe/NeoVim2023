@@ -13,4 +13,9 @@ Note: If running into issues (usually a dependency issue with fzf and telescope)
 Try
 :PackerSync
 :PackerCompile
-:checkhealth telescope 
+:checkhealth telescope
+
+4) For vim-jupyter -> sudo apt install ipython (if using virtualenv, will need -> python3 -m pip install --upgrade pynvim)
+
+
+
