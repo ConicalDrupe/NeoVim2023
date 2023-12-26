@@ -15,7 +15,7 @@ Try
 :PackerCompile
 :checkhealth telescope
 
-4) For vim-jupyter -> sudo apt install ipython (if using virtualenv, will need -> python3 -m pip install --upgrade pynvim)
+4) For vim-jupyter -> sudo apt install ipython3 (if using virtualenv, will need -> python3 -m pip install --upgrade pynvim)
 
 
 
