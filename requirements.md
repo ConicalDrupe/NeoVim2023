@@ -26,7 +26,10 @@ for URL opening; will change options in plugins/obsidian.lua if on different OS 
 sudo apt-get install xclip
 ex. cat file | xclip
 
-#R
+# Latex
+[Zathura](https://pwmt.org/projects/zathura/installation/) 
+
+# R
 - install R
 - add the following snippet to .Rprofile
 ```
