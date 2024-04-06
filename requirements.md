@@ -19,6 +19,10 @@
 sudo apt install xdg-utils \n
 for URL opening; will change options in plugins/obsidian.lua if on different OS (default is linux)
 
+# SQL and Dadbod-ui
+## SqlServer
+go-sqlcmd: https://github.com/microsoft/go-sqlcmd
+
 # OhMyZsh
 - PowerLevel10k
 
