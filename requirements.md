@@ -22,6 +22,7 @@ for URL opening; will change options in plugins/obsidian.lua if on different OS 
 # SQL and Dadbod-ui
 ## SqlServer
 go-sqlcmd: https://github.com/microsoft/go-sqlcmd
+Docker: https://docs.docker.com/engine/install/ubuntu/
 
 # OhMyZsh
 - PowerLevel10k
