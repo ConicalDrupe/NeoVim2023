@@ -1,8 +1,27 @@
 return { -- LSP Configuration & Plugins
+  {
+    -- for lsp features in code cells / embedded code
+    'jmbuhr/otter.nvim',
+    dev = false,
+    dependencies = {
+      {
+        'neovim/nvim-lspconfig',
+        'nvim-treesitter/nvim-treesitter',
+      },
+    },
+    opts = {
+      verbose = {
+        no_code_found = false,
+      }
+    },
+  },
+
+{
+
    'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for neovim
-      'williamboman/mason.nvim',
+      {'williamboman/mason.nvim',config=true},
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
@@ -140,7 +159,9 @@ return { -- LSP Configuration & Plugins
         pyright = {},
         -- r_language_server = {},
         sqlls = {},
-        marksman = {},
+        marksman = {
+            filetypes = {'markdown','quarto'}
+                },
         gopls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -189,10 +210,10 @@ return { -- LSP Configuration & Plugins
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format lua code
         -- NOTE: Boon -> See Conform Plugin Below
-        -- "prettier", -- prettier formatter
-        -- "isort", -- python formatter
-        -- "black", -- python formatter
-        -- "pylint", -- python linter
+        "prettier", -- prettier formatter
+        "isort", -- python formatter
+        "black", -- python formatter
+        "pylint", -- python linter
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -237,4 +258,5 @@ return { -- LSP Configuration & Plugins
       },
     },
   },
+},
 }
